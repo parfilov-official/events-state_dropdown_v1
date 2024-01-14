@@ -10,7 +10,7 @@ const DropdownList = () => {
   <ul className="dropdown">
     {item.map((item) => <DropdownItem
       style={{color: `${active === item.id ? '#5380F7' : '#666'}`}}
-      onClick={(key) => clickHandler(item.id)}
+      onClick={() => clickHandler(item.id)}
       key={item.id} href={item.href}
       text={item.text}
     />)}
